@@ -1,0 +1,53 @@
+/* Fonts */
+@font-face {
+    font-family: Lato;
+    src: url("file:///Users/zanewhitney/Library/Fonts/Lato-Lig.ttf");
+    font-weight: light;
+}
+
+@font-face {
+    font-family: Calluna;
+    src: url("file:///Users/zanewhitney/Library/Fonts/exljbris\ -\ Calluna-Regular.otf");
+    font-weight: light;
+}
+
+@font-face {
+    font-family: Libre Baskerville;
+    src: url("file:///Users/zanewhitney/Library/Fonts/LibreBaskerville-Regular.otf");
+    font-weight: light;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-size: 35px;
+    font-family: Calluna;
+}
+
+.nav {
+    font-family: Lato;
+    font-size: 20px;
+}
+
+/* Adjust jumbo-margin to compensate for larger navbar (can't find less var). */
+.jumbotron {
+    margin-top: 90px;
+    background-image: url("../assets/1280x800.jpg");
+    padding-top: 90px;
+    padding-bottom: 90px;
+    font-family: Lato;
+    font-color: #fff;
+}
+
+.container p {
+    font-family: Lato;
+    font-size: 17px;
+}
+
+/* .dropdown-menu > li > a { */
+/*     line-height: 60px; */
+/*     height: 60px; */
+/*     padding-top: 0; */
+/* } */
+
+
+
