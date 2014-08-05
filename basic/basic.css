@@ -1,9 +1,19 @@
 /* Fonts */
 @font-face {
-    font-family: Lato;
+    font-family: Lato-Light;
     src: url("file:///Users/zanewhitney/Library/Fonts/Lato-Lig.ttf");
-    font-weight: light;
 }
+
+@font-face {
+    font-family: Lato-Reg;
+    src: url("file:///Users/zanewhitney/Library/Fonts/Lato-Reg.ttf");
+}
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url("file:///Users/zanewhitney/Library/Fonts/Lato-Bol.ttf");
+}
+
 
 @font-face {
     font-family: Calluna;
@@ -38,10 +48,24 @@
     font-color: #fff;
 }
 
-.container p {
-    font-family: Lato;
+.contact-us {
+    background-image: url("../assets/1280x800.jpg");
+    /* margin-left: 0; */
+    /* margin-right: 0; */
+}
+
+.container, .container-fluid p {
+    font-family: Lato-Light;
+    font-style: light;
     font-size: 17px;
 }
+
+strong {
+    font-family: Lato-Reg;
+    font-size: 17px;
+    font-style: bold;
+}
+
 
 /* .dropdown-menu > li > a { */
 /*     line-height: 60px; */
