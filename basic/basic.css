@@ -1,4 +1,4 @@
-/* Fonts */
+Fonts
 @font-face {
     font-family: Lato-Light;
     src: url("file:///Users/zanewhitney/Library/Fonts/Lato-Lig.ttf");
@@ -34,7 +34,7 @@
 }
 
 .nav {
-    font-family: Lato;
+    font-family: Lato-Light;
     font-size: 20px;
 }
 
@@ -45,7 +45,8 @@
     padding-top: 90px;
     padding-bottom: 90px;
     font-family: Lato;
-    font-color: #fff;
+    color: white;
+    text-shadow: #444 0 1px 1px;
 }
 
 .contact-us {
@@ -61,9 +62,14 @@
 }
 
 strong {
-    font-family: Lato-Reg;
+    font-family: Lato-Bold;
     font-size: 17px;
     font-style: bold;
+}
+
+/* Phone & Email */
+.com-method {
+    font-family: Lato-Reg;
 }
 
 
