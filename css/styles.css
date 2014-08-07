@@ -1,4 +1,4 @@
-Fonts
+/* Fonts */
 @font-face {
     font-family: Lato-Light;
     src: url("file:///Users/zanewhitney/Library/Fonts/Lato-Lig.ttf");
@@ -14,7 +14,6 @@ Fonts
     src: url("file:///Users/zanewhitney/Library/Fonts/Lato-Bol.ttf");
 }
 
-
 @font-face {
     font-family: Calluna;
     src: url("file:///Users/zanewhitney/Library/Fonts/exljbris\ -\ Calluna-Regular.otf");
@@ -25,6 +24,10 @@ Fonts
     font-family: Libre Baskerville;
     src: url("file:///Users/zanewhitney/Library/Fonts/LibreBaskerville-Regular.otf");
     font-weight: light;
+}
+
+h1 {
+    font-family: Lato-Light;
 }
 
 /* Navbar */
@@ -55,7 +58,7 @@ Fonts
     /* margin-right: 0; */
 }
 
-.container, .container-fluid p {
+.container, .container-fluid p, address {
     font-family: Lato-Light;
     font-style: light;
     font-size: 17px;
