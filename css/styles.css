@@ -45,8 +45,8 @@ h1 {
 .jumbotron {
     margin-top: 90px;
     background-image: url("../assets/1280x800.jpg");
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-family: Lato;
     color: white;
     text-shadow: #444 0 1px 1px;
