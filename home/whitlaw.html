@@ -217,36 +217,44 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
     <script>
-      var sections = $('section')
-      navbar = $('.navbar'),
-      nav_height = navbar.outerHeight();
+    var sections = $('section')
+    navbar = $('.navbar'),
+    nav_height = navbar.outerHeight();
 
-      $(window).on('scroll', function () {
+    $(window).on('scroll', function () {
         var cur_pos = $(this).scrollTop();
 
-        sections.each(function() {
-          var top = $(this).offset().top - nav_height,
-              bottom = top + $(this).outerHeight();
+        if($(window).scrollTop() + $(window).height() == $(document).height()) {
+            if (navbar.find('.active').children() != navbar.find('ul').children().get(-1).children()) {
+                navbar.find('li').removeClass('active');
+                sections.removeClass('active');
 
-          if (cur_pos >= top && cur_pos <= bottom) {
-            navbar.find('li').removeClass('active');
-            sections.removeClass('active');
+                navbar.find('a[href="#'+sections.get(-1).attr('class')+'"]').parent().addClass("active");
+            }
+        } else {
+            sections.each(function() {
+                var top = $(this).offset().top - nav_height,
+                bottom = top + $(this).outerHeight();
 
-            navbar.find('a[href="#'+$(this).attr('class')+'"]').parent().addClass("active");
+                if (cur_pos >= top && cur_pos <= bottom) {
+                    navbar.find('li').removeClass('active');
+                    sections.removeClass('active');
 
-          }
-        });
-      });
+                    navbar.find('a[href="#'+$(this).attr('class')+'"]').parent().addClass("active");
+                }
+            });
+        }
+    });
 
-      navbar.find('a').on('click', function () {
+    navbar.find('a').on('click', function () {
         var start = $(this).attr('href');
         var link = start.substring(1, start.length);
         $('html, body').animate({
-          scrollTop: $('.'+link+'').offset().top - nav_height
+            scrollTop: $('.'+link+'').offset().top - nav_height
         }, 500);
 
         return false;
-      });
+    });
     </script>
   </body>
 </html>
