@@ -224,12 +224,13 @@
     $(window).on('scroll', function () {
         var cur_pos = $(this).scrollTop();
 
-        if($(window).scrollTop() + $(window).height() == $(document).height()) {
-            if (navbar.find('.active').children() != navbar.find('ul').children().get(-1).children()) {
+        if($(window).scrollTop() + $(window).height() >= $(document).height()) {
+            if (navbar.find('.active').children() != navbar.find('ul').children().get(-1).children) {
                 navbar.find('li').removeClass('active');
                 sections.removeClass('active');
 
-                navbar.find('a[href="#'+sections.get(-1).attr('class')+'"]').parent().addClass("active");
+                var lastsec = navbar.find('ul').children().get(-1);
+                lastsec.className = "active";
             }
         } else {
             sections.each(function() {
