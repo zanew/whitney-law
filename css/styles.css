@@ -44,7 +44,8 @@ h1 {
 /* Adjust jumbo-margin to compensate for larger navbar (can't find less var). */
 .jumbotron {
     margin-top: 90px;
-    background-image: url("../assets/1280x800.jpg");
+    background-image: url("../assets/whitney_serious_cropped.png");
+    background-size: contain;
     padding-top: 90px;
     padding-bottom: 90px;
     font-family: Lato;
@@ -53,7 +54,7 @@ h1 {
 }
 
 .contact-us {
-    background-image: url("../assets/1280x800.jpg");
+    background-image: url("../assets/1200x800.jpg");
     /* margin-left: 0; */
     /* margin-right: 0; */
 }
