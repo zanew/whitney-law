@@ -15,6 +15,11 @@
 }
 
 @font-face {
+    font-family: Lato-Hairline-Italic;
+    src: url("file:///Users/zanewhitney/Library/Fonts/Lato-HaiIta.ttf");
+}
+
+@font-face {
     font-family: Calluna;
     src: url("file:///Users/zanewhitney/Library/Fonts/exljbris\ -\ Calluna-Regular.otf");
     font-weight: light;
@@ -28,6 +33,16 @@
 
 h1 {
     font-family: Lato-Light;
+}
+
+strong {
+    font-family: Lato-Bold;
+    font-size: 17px;
+    font-style: bold;
+}
+
+blockquote {
+    font-family: Lato-Hairline-Italic;
 }
 
 /* Navbar */
@@ -65,11 +80,6 @@ h1 {
     font-size: 17px;
 }
 
-strong {
-    font-family: Lato-Bold;
-    font-size: 17px;
-    font-style: bold;
-}
 
 /* Phone & Email */
 .com-method {
