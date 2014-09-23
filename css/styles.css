@@ -59,17 +59,31 @@ blockquote {
 /* Adjust jumbo-margin to compensate for larger navbar (can't find less var). */
 .jumbotron {
     margin-top: 90px;
-    background-image: url("../assets/whitney_serious_cropped.png");
-    background-size: contain;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: Lato;
     color: white;
     text-shadow: #444 0 1px 1px;
 }
 
-.contact-us {
-    background-image: url("../assets/1200x800.jpg");
+.sec-about-us > .jumbotron {
+    background-image: url("../assets/whitlaw_convo_cropped.jpg");
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.sec-services > .jumbotron {
+    background-image: url("../assets/derp.jpg");
+}
+
+.sec-case-results > .jumbotron {
+    background-image: url("../assets/whitlaw_conference.jpg");
+}
+
+.contact-us > .jumbotron {
+    background-image: url("../assets/whitlaw_on_phone_cropped.jpg");
+
     /* margin-left: 0; */
     /* margin-right: 0; */
 }
