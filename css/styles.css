@@ -1,4 +1,6 @@
 /* Fonts */
+
+
 @font-face {
     font-family: Lato-Light;
     src: url("file:///Users/zanewhitney/Library/Fonts/Lato-Lig.ttf");
@@ -56,12 +58,24 @@ blockquote {
     font-size: 20px;
 }
 
+@media (max-width: 400px) {
+    .navbar-brand {
+        font-size: 30px
+    }
+}
+
+@media (max-width: 320px) {
+    .navbar-brand {
+        font-size: 25px
+    }
+}
+
 /* Adjust jumbo-margin to compensate for larger navbar (can't find less var). */
 .jumbotron {
     margin-top: 90px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right center;
     font-family: Lato;
     color: white;
     text-shadow: #444 0 1px 1px;
@@ -83,9 +97,6 @@ blockquote {
 
 .contact-us > .jumbotron {
     background-image: url("../assets/whitlaw_on_phone_cropped.jpg");
-
-    /* margin-left: 0; */
-    /* margin-right: 0; */
 }
 
 .container, .container-fluid p, address {
