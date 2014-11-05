@@ -66,45 +66,64 @@ blockquote {
     color: #777;
 }
 
+/*Keep nav button and brand separate*/
 @media (max-width: 400px) {
     .navbar-brand {
-        font-size: 30px
+        font-size: 30px;
     }
 }
 
 @media (max-width: 320px) {
     .navbar-brand {
-        font-size: 25px
+        font-size: 25px;
     }
 }
+
+
 
 /* Adjust jumbo-margin to compensate for larger navbar (can't find less var). */
 .jumbotron {
     margin-top: 90px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: center;
     font-family: Lato;
     color: white;
     text-shadow: #444 0 1px 1px;
 }
 
-.sec-about-us > .jumbotron {
+.about-us {
     background-image: url("../assets/whitlaw_convo_cropped.jpg");
     padding-top: 150px;
     padding-bottom: 150px;
 }
 
-.sec-services > .jumbotron {
-    background-image: url("../assets/derp.jpg");
+/* Tasteful background positions */
+
+@media (max-width: 626px) {
+    .about-us > .jumbotron {
+        background-position: right center;
+    }
 }
 
-.sec-case-results > .jumbotron {
+/* .sec-services > .jumbotron { */
+/*     background-image: url("../assets/derp.jpg"); */
+/* } */
+
+.case-results {
     background-image: url("../assets/whitlaw_conference.jpg");
 }
 
 .contact-us > .jumbotron {
     background-image: url("../assets/whitlaw_on_phone_cropped.jpg");
+}
+
+/* Tasteful background positions */
+
+@media (max-width: 556px) {
+    .contact-us > .jumbotron {
+        background-position: right center;
+    }
 }
 
 .container, .container-fluid p, address {
