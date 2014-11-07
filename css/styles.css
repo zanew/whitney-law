@@ -1,6 +1,5 @@
 /* Fonts */
 
-
 @font-face {
     font-family: Lato-Light;
     src: url("file:///Users/zanewhitney/Library/Fonts/Lato-Lig.ttf");
@@ -83,7 +82,6 @@ blockquote {
     margin-top: 150px
 }
 
-/* Adjust jumbo-margin to compensate for larger navbar (can't find less var). */
 .jumbotron {
     margin-top: 90px;
     background-size: cover;
@@ -100,21 +98,15 @@ blockquote {
     background-position: 80%;
 }
 
-/* Tasteful background positions */
-
-/* @media (max-width: 626px) { */
-/*     .about-us { */
-/*         background-position: right center; */
-/*     } */
-/* } */
-
-/* .sec-services > .jumbotron { */
-/*     background-image: url("../assets/derp.jpg"); */
-/* } */
-
 .case-results {
     background-image: url("../assets/whitlaw_conference.jpg");
-    background-position: 0% 50%
+    background-position: 0% 50%;
+}
+
+.services {
+    background-image: url("../assets/whitlaw_services.jpg");
+    background-position-x: 20%;
+    background-position: 20% 65%;
 }
 
 .contact-us > .jumbotron {
@@ -141,13 +133,6 @@ blockquote {
 .com-method {
     font-family: Lato-Reg;
 }
-
-
-/* .dropdown-menu > li > a { */
-/*     line-height: 60px; */
-/*     height: 60px; */
-/*     padding-top: 0; */
-/* } */
 
 
 

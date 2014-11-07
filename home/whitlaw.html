@@ -7,10 +7,6 @@
     <meta name="viewport" content="width=device-width,
                                    initial-scale=1">
     <meta name="description" content="Familiar, Trusted, Effective">
-    <!-- Use if I want to end up just scrolling on mobile -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1,
-         maximum-scale=1, user-scalable=no"> -->
-
     <!-- Stylesheets -->
     <link rel="stylesheet"
           href="../css/bootstrap.min.css">
@@ -66,7 +62,7 @@
         </div>
       </div>
     </section>
-    <header class="jumbotron">
+    <header class="jumbotron services">
       <div class="container">
         <h1 class="text-center">Services</h1>
       </div>
@@ -280,7 +276,6 @@
             </div>
             <div class="col-md-4">
               <p>
-                <!-- <strong>Contact Us</strong><br> -->
                 <strong class="com-method"><abbr title="Phone">P:</abbr></strong>
                 <a href="tel:6038824224">(603) 882-4224</a><br>
                 <strong class="com-method">Email:</strong>
@@ -342,7 +337,7 @@
                 if (cur_pos >= top && cur_pos <= bottom) {
                     navbar.find('li').removeClass('active');
                     sections.removeClass('active');
-
+                    // Make the link that corresponds to this section active
                     navbar.find('a[href="#'+$(this).attr('class')+'"]').parent().addClass("active");
                 }
             });
@@ -354,6 +349,7 @@
         var start = $(this).attr('href');
         var link = start.substring(1, start.length);
         $('html, body').animate({
+            // compensate for size of navbar
             scrollTop: $('.'+link+'').offset().top - nav_height - collapse_height
         }, 500);
 
