@@ -40,6 +40,18 @@ blockquote {
     font-family: Lato-Hairline-Italic;
 }
 
+section {
+    margin-bottom: 30px
+}
+
+p {
+    font-size: 19px
+}
+
+.jumbotron p {
+    font-size: 25px
+}
+
 /* Navbar */
 .navbar-brand {
     font-size: 35px;
@@ -77,7 +89,6 @@ blockquote {
 }
 
 .jumbotron {
-    margin-top: 90px;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Lato;
