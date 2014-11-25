@@ -2,33 +2,27 @@
 
 @font-face {
     font-family: Lato-Light;
-    src: url("file:///Users/zanewhitney/Library/Fonts/Lato-Lig.ttf");
+    src: url('lato-lig-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: Lato-Reg;
-    src: url("file:///Users/zanewhitney/Library/Fonts/Lato-Reg.ttf");
+    src: url('lato-reg-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: Lato-Bold;
-    src: url("file:///Users/zanewhitney/Library/Fonts/Lato-Bol.ttf");
+    src: url('lato-bol-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: Lato-Hairline-Italic;
-    src: url("file:///Users/zanewhitney/Library/Fonts/Lato-HaiIta.ttf");
+    src: url('lato-haiita-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: Calluna;
-    src: url("file:///Users/zanewhitney/Library/Fonts/exljbris\ -\ Calluna-Regular.otf");
-    font-weight: light;
-}
-
-@font-face {
-    font-family: Libre Baskerville;
-    src: url("file:///Users/zanewhitney/Library/Fonts/LibreBaskerville-Regular.otf");
+    src: url('exljbris_-_calluna-regular-webfont.woff') format('woff');
     font-weight: light;
 }
 
@@ -131,8 +125,5 @@ blockquote {
 
 /* Phone & Email */
 .com-method {
-    font-family: Lato-Reg;
+    font-family: Lato-Bold;
 }
-
-
-
