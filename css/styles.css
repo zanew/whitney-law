@@ -116,7 +116,8 @@ p {
 
 .contact-us > .jumbotron {
     background-image: url("../assets/whitlaw_on_phone_cropped.jpg");
-    background-position: 80%
+    background-position: 80%;
+    padding-top: 30px
 }
 
 /* Tasteful background positions */
