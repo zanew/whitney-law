@@ -88,6 +88,12 @@ p {
     margin-top: 150px
 }
 
+@media (max-width: 367px) {
+    .spacer {
+        margin-top: 250px
+    }
+}
+
 .jumbotron {
     background-size: cover;
     background-repeat: no-repeat;
