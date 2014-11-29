@@ -71,27 +71,8 @@ p {
     color: #777;
 }
 
-/*Keep nav button and brand separate*/
-@media (max-width: 400px) {
-    .navbar-brand {
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 320px) {
-    .navbar-brand {
-        font-size: 25px;
-    }
-}
-
 .spacer {
     margin-top: 150px
-}
-
-@media (max-width: 367px) {
-    .spacer {
-        margin-top: 250px
-    }
 }
 
 .jumbotron {
@@ -126,14 +107,6 @@ p {
     padding-top: 30px
 }
 
-/* Tasteful background positions */
-
-@media (max-width: 556px) {
-    .contact-us > .jumbotron {
-        background-position: 70%;
-    }
-}
-
 .container, .container-fluid p, address {
     font-family: Lato-Light;
     font-style: light;
@@ -144,4 +117,35 @@ p {
 /* Phone & Email */
 .com-method {
     font-family: Lato-Bold;
+}
+
+/*Keep nav button and brand separate*/
+@media (max-width: 400px) {
+    .navbar-brand {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .navbar-brand {
+        font-size: 25px;
+    }
+
+    .about-us {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+/* Tasteful background positions */
+@media (max-width: 556px) {
+    .contact-us > .jumbotron {
+        background-position: 70%;
+    }
+}
+
+@media (max-width: 367px) {
+    .spacer {
+        margin-top: 250px
+    }
 }
