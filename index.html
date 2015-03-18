@@ -307,10 +307,11 @@
     var navbar = $('.navbar');
     var collapse = $('.collapse');
     var collapse_height = collapse.outerHeight();
-    var nav_height = navbar.outerHeight();
+    var nav_height = navbar.height();
 
     $(window).on('scroll', function () {
         var cur_pos = $(this).scrollTop();
+        var cur_nav_height = navbar.height();
 
         // If were at the bottom of the page, set the last section to be active
         if($(window).scrollTop() + $(window).height() >= $(document).height()) {
@@ -327,7 +328,7 @@
         } else {
             sections.each(function() {
                 // Getting the upper and lower bounds of this section
-                var top = $(this).offset().top - nav_height - collapse_height;
+                var top = $(this).offset().top - cur_nav_height;
                 bottom = top + $(this).outerHeight();
 
                 if (cur_pos >= top && cur_pos <= bottom) {
@@ -344,9 +345,10 @@
     navbar.find('a').on('click', function () {
         var start = $(this).attr('href');
         var link = start.substring(1, start.length);
+        var cur_nav_height = navbar.height()
         $('html, body').animate({
             // compensate for size of navbar
-            scrollTop: $('.'+link+'').offset().top - nav_height - collapse_height
+            scrollTop: $('.'+link+'').offset().top - cur_nav_height
         }, 500);
 
         return false;
